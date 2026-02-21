@@ -2,7 +2,8 @@ name: Test Telegram Post
 
 on:
   workflow_dispatch: {}
-
+  schedule:
+    - cron: "0 */3 * * *"
 jobs:
   send_test:
     runs-on: ubuntu-latest
